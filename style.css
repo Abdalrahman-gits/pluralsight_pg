@@ -13,6 +13,13 @@ html,body {
   overflow: hidden;
 }
 
+@media (max-width:991px) {
+  html,
+  body{
+    overflow: auto;
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -69,7 +76,9 @@ button:hover {
 }
 @media (max-width:767px) {
   .sign-in {
+    align-items: start;
     width: 100%;
+    padding-bottom: 50px;
   }
 }
 
@@ -77,6 +86,14 @@ img {
   width: 240px;
   max-width: 100%;
   margin-bottom: 50px;
+}
+
+@media (max-width:767px) {
+  img {
+    width: 220px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 form {
@@ -162,6 +179,12 @@ footer {
   margin-top: 100px;
 }
 
+@media (max-width:767px) {
+  footer {
+    margin-top: 35px;
+  }
+}
+
 .links {
   position: relative;
 }
@@ -199,6 +222,7 @@ footer a {
   background-color: black;
   background-image: url(photos/modern-futuristic-sci-fi-background_35913-2150.avif);
   background-size: cover;
+  background-position: center center;
   z-index: 1;
 }
 
